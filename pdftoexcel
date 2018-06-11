@@ -1,0 +1,9 @@
+#!/bin/bash
+#Script maintaining only 1 type of files (which Kasia sent)
+
+echo 'Siema'
+
+pdftotext -layout wzetka.pdf
+
+python3 pdftocsv.py
+python3 csvtoexcel.py
